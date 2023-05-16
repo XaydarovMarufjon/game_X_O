@@ -21,6 +21,9 @@
 .o::after {
     content: '⭕';
 }
+h1{
+    padding-top: 100px;
+}
 
 .grid-cell {
     border: 1px solid #000;
@@ -52,11 +55,12 @@
 
 .game-over-text {
     position: absolute;
-    top: -200px;
+    top: -260px;
     font-size: 60px;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
+    transform: translateX(-20px);
 }
 
 .visible {
