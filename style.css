@@ -1,0 +1,65 @@
+#game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.grid-cell {
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.x::after {
+    content: '❌';
+}
+
+.o::after {
+    content: '⭕';
+}
+
+.grid-cell {
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.grid-cell:not(.disabled):hover {
+    background: #eee;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+}
+
+.game-over-text {
+    position: absolute;
+    top: -200px;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.visible {
+    display: block;
+}
+       
