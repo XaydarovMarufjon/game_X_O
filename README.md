@@ -1,3 +1,2 @@
-# game_X_O
-# game_X_O
-# game_X_O
+X va O o'yini
+Ovozli holat bor naushnikdan foydalaning 
